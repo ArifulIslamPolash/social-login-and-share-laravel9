@@ -1,0 +1,9 @@
+Use social media login:
+==========================
+facebook
+google
+linkedin
+twitter
+github
+gitlab
+bitbucket
