@@ -44,9 +44,9 @@ return [
     ],
 
     'google' => [
-        'client_id' => env('GITHUB_CLIENT_ID'),
-        'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => 'http://example.com/callback-url',
+        'client_id' => '67910159249-d888hlfpqiha50sgof80be1j0sjnjb94.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://localhost:8000/login/google/callback',
     ],
 
     'github' => [

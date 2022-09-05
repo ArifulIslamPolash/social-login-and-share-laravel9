@@ -26,3 +26,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/login/facebook', [SocialController::class, 'facebookRedirect']);
 Route::get('/login/facebook/callback', [SocialController::class, 'loginWithFacebook']);
 
+Route::get('/login/google', [SocialController::class, 'googleRedirect']);
+Route::get('/login/google/callback', [SocialController::class, 'loginWithGoogle']);
+
