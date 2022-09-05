@@ -1,9 +1,15 @@
 Use social media login:
 ==========================
-facebook
-google
+facebook(done)
+google(done)
 linkedin
 twitter
-github
+github(done)
 gitlab
 bitbucket
+
+problem:
+==========================
+error: 1.same email is not valid in database(user table)
+        2. error show page or not show error
+        3.how to solve error if you login multiple social account in a gamil (thinking)
