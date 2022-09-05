@@ -16,7 +16,7 @@ class SocialController extends Controller
         $user = Socialite::driver('facebook')->stateless()->user();
 
         $findUser = User::where('facebook_id', $user->id)->first();
-        dd($findUser);
+
         if($findUser){
             Auth::login($findUser);
             return redirect('/home');
