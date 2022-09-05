@@ -31,11 +31,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
-    'name_demo' => [
-        'client_id' => env('GITHUB_CLIENT_ID'),
-        'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => 'http://example.com/callback-url',
-    ],
+    // 'name_demo' => [
+    //     'client_id' => env('GITHUB_CLIENT_ID'),
+    //     'client_secret' => env('GITHUB_CLIENT_SECRET'),
+    //     'redirect' => 'http://example.com/callback-url',
+    // ],
 
     'facebook' => [
         'client_id' => '740698167029714',
@@ -50,9 +50,9 @@ return [
     ],
 
     'github' => [
-        'client_id' => env('GITHUB_CLIENT_ID'),
-        'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => 'http://example.com/callback-url',
+        'client_id' => 'f0b4958a99a84b365c49',
+        'client_secret' => '1a4db37c239c2f27fd96a7ad46f171c5ed5982e3',
+        'redirect' => 'http://localhost:8000/login/github/callback',
     ],
 
 ];

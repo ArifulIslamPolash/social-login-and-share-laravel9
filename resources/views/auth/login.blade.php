@@ -43,7 +43,7 @@
                             <div class="col-md-6 offset-md-4">
                                 <a href="{{ url('/login/facebook') }}" class="btn btn-success">Facebook</a>
                                 <a href="{{ url('/login/google') }}" class="btn btn-success">Google</a>
-                                <a href="" class="btn btn-success">Github</a>
+                                <a href="{{ url('/login/github') }}" class="btn btn-success">Github</a>
 
                                 {{-- <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
