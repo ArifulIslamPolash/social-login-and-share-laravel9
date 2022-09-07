@@ -32,3 +32,5 @@ Route::get('/login/google/callback', [SocialController::class, 'loginWithGoogle'
 Route::get('/login/github', [SocialController::class, 'githubRedirect']);
 Route::get('/login/github/callback', [SocialController::class, 'loginWithGithub']);
 
+Route::get('/social-share',[SocialController::class,'index']);
+

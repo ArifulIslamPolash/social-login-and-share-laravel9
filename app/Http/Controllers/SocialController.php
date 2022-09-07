@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
 use Auth;
+use Share;
 
 use Illuminate\Http\Request;
 
@@ -81,5 +82,21 @@ class SocialController extends Controller
             Auth::login($new_user);
             return redirect('/home');
         }
+    }
+
+
+
+
+
+    public function index(){
+       $socialShare = Share::page('https://www.prothomalo.com/bangladesh/qix05whu4g','এলপিজির দাম বাড়ল, ১২ কেজির সিলিন্ডার এখন ১২৩৫')
+        ->facebook()
+        ->twitter()
+        ->linkedin()
+        ->whatsapp()
+        ->telegram()->getRawlinks();
+        // dd($socialShare);
+        return view('social-share', compact('socialShare'));
+
     }
 }
